@@ -19,7 +19,6 @@
   }
   /* banner styles */
   .banner {
-    outline: 1px solid yellow;
     background-size: contain;
     background-position-y: 30%;
   }
