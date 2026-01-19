@@ -1,5 +1,18 @@
 /* Small device styles */
 @media screen and (max-width: 567px) {
+  /* shared styles */
+  .section-title {
+    font-size: 2rem;
+    line-height: 39px;
+  }
+
+  /* grouping styles */
+  .about-podcast .section-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    width: auto;
+  }
   /* nav bar styles */
   #header-container nav {
     padding: 16px 20px;
@@ -29,5 +42,26 @@
   }
   .banner-content .mic-logo img {
     width: 80%;
+  }
+
+  /* About The Podcast section */
+  .about-podcast {
+    padding: 0;
+  }
+  .about-podcast-des span {
+    margin-top: 10px;
+  }
+  .about-podcast .section-container hr {
+    margin: 40px 0;
+  }
+  .about-podcast .about-podcast-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .about-podcast-info .info-item h4 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 48px;
+    text-align: center;
   }
 }
