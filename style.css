@@ -87,6 +87,7 @@ header {
   background-position-x: center;
   padding: 100px 0;
   width: 100%;
+  /* background-size: %; */
 }
 .banner .banner-content {
   max-width: 550px;
@@ -98,9 +99,14 @@ header {
   background-position: center;
   background-size: cover;
   max-width: 350px;
+  max-height: 350px;
   padding: 85px 75px;
-  text-align: center;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content .mic-logo img {
+  width: 60%;
 }
 .banner-content .content-title {
   color: white;
@@ -123,7 +129,7 @@ header {
 }
 .banner-buttons img {
   vertical-align: middle;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 .banner-buttons .subscribe-button {
   background-image: none;
