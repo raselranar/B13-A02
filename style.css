@@ -257,7 +257,7 @@ header {
 }
 .video-card iframe {
   width: 100%;
-  height: auto;
+  /* height: 300px; */
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }

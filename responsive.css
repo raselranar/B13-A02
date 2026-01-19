@@ -7,16 +7,19 @@
   }
 
   /* grouping styles */
-  .about-podcast .section-container {
+  .about-podcast .section-container,
+  .host-section .host-content {
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
     width: auto;
   }
-  .choose-techWave .section-container {
+  .choose-techWave .section-container,
+  .featured-section .featured-section-container {
     padding: 40px 20px;
     width: auto;
   }
+
   /* nav bar styles */
   #header-container nav {
     padding: 16px 20px;
@@ -74,5 +77,19 @@
   .choose-techWave-content .content-item {
     grid-column: auto;
     grid-row: auto;
+  }
+  /* Featured sections */
+  .videos-container {
+    flex-direction: column;
+    /* margin: auto; */
+  }
+  .videos-container .video-card {
+    max-width: 100%;
+  }
+  .host-section .host-content {
+    text-align: center;
+  }
+  .host-socials {
+    justify-content: center;
   }
 }
