@@ -15,6 +15,11 @@
   }
 
   /* grouping styles */
+  .choose-techWave-content,
+  .videos-container,
+  .host-section .host-content {
+    margin-top: 24px;
+  }
   .about-podcast .section-container,
   .host-section .host-content {
     display: flex;
