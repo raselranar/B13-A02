@@ -1,3 +1,11 @@
+@media screen and (min-width: 992px) {
+  #footer {
+    /* background-size: 105% 100%; */
+    background-size: 0 cover;
+    background-position: 50% 5%;
+  }
+}
+
 /* Small device styles */
 @media screen and (max-width: 567px) {
   /* shared styles */
@@ -29,7 +37,11 @@
   }
 
   /* main styles */
+  #header-container {
+    /* background-color: #191344; */
+  }
   /* nav bar styles */
+
   #header-container nav {
     padding: 16px 20px;
     margin: 0;
@@ -48,8 +60,12 @@
   }
   /* banner styles */
   .banner {
-    background-size: contain;
-    background-position-y: 20%;
+    background-size: 170% 106%;
+    background-position: 50% 160%;
+  }
+  .banner-content .content-title {
+    font-size: 2.5em;
+    margin-top: 24px;
   }
   .banner-content .mic-logo {
     max-width: 200px;
@@ -63,11 +79,12 @@
   /* About The Podcast section */
   .about-podcast {
     padding: 0;
+    background: rgba(26, 11, 46, 1);
   }
   .about-podcast-des span {
     margin-top: 10px;
   }
-  .about-podcast .section-container hr {
+  .separator {
     margin: 40px 0;
   }
   .about-podcast .about-podcast-info {
@@ -125,5 +142,15 @@
 
   .footer-container .footer-logo {
     width: 50%;
+  }
+  .banner-content .badge {
+    font-weight: 600;
+    line-height: 19px;
+    font-size: 1rem;
+    right: 0px;
+  }
+  #footer .separator {
+    margin: 10px 0;
+    width: 100%;
   }
 }

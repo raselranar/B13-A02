@@ -28,6 +28,7 @@ main .section-container,
   font-optical-sizing: auto;
 }
 .primary-btn {
+  cursor: pointer;
   padding: 12px 16px;
   border-radius: 25px;
   border: none;
@@ -74,6 +75,7 @@ header {
 #header-container nav {
   border-bottom: 1px solid #412567;
   padding: 25px 0;
+  background-color: #1a0b2e;
 }
 #header-container .navbar {
   justify-content: space-between;
@@ -88,7 +90,11 @@ header {
 }
 .navbar .nav-item {
   list-style-type: none;
-  padding: 5px 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+.nav-item:hover {
+  background-color: #5f1dbb;
 }
 .navbar .nav-item a {
   text-decoration: none;
@@ -116,6 +122,19 @@ header {
   max-width: 550px;
   margin: 0 auto;
 }
+.banner-content .badge {
+  position: absolute;
+  top: 0px;
+  right: 15%;
+  padding: 8px 16px;
+  background-color: #00ff88;
+  border-radius: 50px;
+  font-weight: 600;
+  line-height: 22px;
+  font-size: 1.12rem;
+  color: #1a0b2e;
+  box-shadow: 0px 3px 15px rgba(0, 255, 136, 0.5);
+}
 .banner-content .mic-logo {
   background-image: url("./assets/hero-circle.png");
   background-repeat: no-repeat;
@@ -127,6 +146,7 @@ header {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .banner-content .mic-logo img {
   width: 60%;
@@ -149,6 +169,74 @@ header {
 .banner-content .banner-buttons {
   margin-top: 24px;
   text-align: center;
+}
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+/* button animations */
+/* @keyframes gradient-flow {
+  0% {
+    background-image: linear-gradient(
+      47deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    );
+  }
+  20% {
+    background-image: linear-gradient(
+      67deg,
+      rgb(184, 174, 67),
+      rgb(218, 27, 160),
+      rgb(146, 61, 207)
+    );
+  }
+  40% {
+    background-image: linear-gradient(
+      90deg,
+      rgb(216, 199, 18),
+      rgb(163, 30, 123),
+      rgb(72, 15, 112)
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      110deg,
+      rgb(190, 180, 62),
+      rgb(112, 13, 83),
+      rgb(151, 80, 201)
+    );
+  }
+  80% {
+    background-image: linear-gradient(
+      130deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    );
+  }
+
+  100% {
+    background-image: linear-gradient(
+      150deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    );
+  }
+} */
+.banner-buttons > button:first-child {
+  background-size: 400% 100%;
+  animation: gradient-flow 2s linear infinite;
+  /* animation-direction: alternate-reverse; */
 }
 .banner-buttons img {
   vertical-align: middle;
@@ -180,7 +268,7 @@ header {
   display: block;
   margin-top: 20px;
 }
-.about-podcast .section-container hr {
+.separator {
   margin: 80px 0;
   height: 1px;
   border: none;
@@ -350,4 +438,9 @@ header {
 .footer-socials-icon img {
   vertical-align: middle;
   margin-right: 8px;
+}
+
+#footer .separator {
+  margin: 90px auto 20px;
+  width: 70%;
 }
